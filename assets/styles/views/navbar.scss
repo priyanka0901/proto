@@ -1,11 +1,20 @@
 /*-----navbar-----*/
 .navbar{
     width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
 }
 .navbar__grey{
 background-color: $navbar-bc;
-padding: 20px;
 }
-.navbar__title_logo{
-
+.navbar__logo {
+font-weight: bold;
+font-size: 20px;
+color:#fff;
+}
+.navbar__item{
+    color:#f5f5f5;
 }
