@@ -531,31 +531,7 @@ var recipe=[
   "MOLLIE KATZEN": false,
   "LOCAL": false,
   "ORGANIC": false
- },
- {
-  "id": "130009",
-  "name": "Sliced White American Cheese",
-  "size": "1",
-  "unit": "oz",
-  "ingredients": "White American Cheese (Cultured Pasteurized Milk and Skim Milk, Cream, Salt, Sodium Citrate, Contains Less Than 2% Of Milk Protein Concentrate, Milk fat, Sodium  Phosphate, Sorbic Acid (Preservative), Lactic Acid, Enzymes, Soy Lecithin and Soybean Oil Blend (Non-Sticking Agents).)",
-  "VEGETARIAN": false,
-  "VEGAN": false,
-  "MOLLIE KATZEN": false,
-  "LOCAL": false,
-  "ORGANIC": false
- },
- {
-  "id": "211043",
-  "name": "Seeded Hamburg Rolls",
-  "size": "1",
-  "unit": "each",
-  "ingredients": "Seeded Hamburger Roll (Wheat Flour, Water, Sugar, Yeast, Soybean Oil, Salt, Malt, Dough Conditioners (ascorbic acid, Azodicarbonamide, calcium sulfate, L-Cysteine, potassium bromate, sodium Stearoyl, lactate), Corn Flour,  Ammonium Sulfate (yeast nutrient), Spice and coloring (paprika, tumaric), Soybean Lecithin.)",
-  "VEGETARIAN": true,
-  "VEGAN": false,
-  "MOLLIE KATZEN": false,
-  "LOCAL": false,
-  "ORGANIC": false
- },
- ]
- export default recipe
+ }
+ ];
+ export default recipe;
  

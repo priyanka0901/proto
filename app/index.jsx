@@ -10,9 +10,7 @@ const Models = React.createClass({
      return(
       <div>
         <Navbar />
-        <div className="pure-g">
         <Card />
-        </div>
       </div>
         );
     }

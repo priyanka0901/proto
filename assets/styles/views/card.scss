@@ -1,11 +1,18 @@
+/*-------card--------------*/
+.card__container{
+    max-width: 1200px;
+    margin: auto;
+}
+
 /*-------cardview----------*/
 .card{
     background-color: $card-bc;
     border:1px solid #e2e2e2;
-    width: 275px;
+    width: 300px;
+    padding: 10px;
+    margin:40px auto;
 }
 .card__image{
-    background-image: url('../images/food.jpg');
     background-position: center;
     background-size: cover;
     height: 250px;
@@ -13,12 +20,14 @@
 .card__content{
    padding: 10px;
 }
-.card__dishName{
+.card__dishname{
     font-size: 16px;
     text-transform: capitalize;
     display: flex;
     justify-content: center;
     margin:10px;
+    height: 25px;
+    overflow: hidden;
 }
 .card__action_share, .card__action_add{
     display: inline-block;

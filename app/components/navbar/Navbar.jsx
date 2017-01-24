@@ -6,7 +6,7 @@ const Navbar = React.createClass({
         return (
             <div className="navbar navbar__grey">
                     <p className="navbar__logo">Proto </p>
-                    <p className="navbar__item">My diet </p>
+                    <p className="navbar__item">My Diet </p>
             </div>    
        );
     }
