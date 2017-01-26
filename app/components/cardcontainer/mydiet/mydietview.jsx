@@ -7,8 +7,8 @@ const Mydietview =React.createClass({
         return(
          <div className="pure-u-lg-1-3 pure-u-md-1-2 pure-u-sm-1">
             <div className="dietcard">
-                <div className="dietcard__image"></div>
-                  <p className="dietcard__dishname">Dish name</p>
+                <div className="dietcard__image" style={{backgroundImage:"url(" + this.props.image + ")"}}></div>
+                  <p className="dietcard__dishname">{this.props.name}</p>
                     <div className="dietcard__nutrition">
                       <ul>
                       <li>calcium <span className="nutrition_values"> 48%</span></li>

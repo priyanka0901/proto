@@ -2,11 +2,17 @@
 
 import React from 'react';
 import Cardview from './Cardview.jsx'
-import recipe from '../../data/recipe.js';
+import recipe from '../../../data/recipe.js';
 
 const Card = React.createClass({
+    handleClickCard:function(info){
+        var that = this.props.handleClickDiet;
+        return function(){
+            that(info);
+        }
+    },
     createCard:function(data){
-        return <Cardview name={data.name} image={data.image} key={data.id}/>;
+        return <Cardview name={data.name} image={data.image} key={data.id} recipeId={data.id} handleClickCardfunc={this.handleClickCard}/>;
     },
     createCards: function (recipe) {
     return recipe.map(this.createCard);

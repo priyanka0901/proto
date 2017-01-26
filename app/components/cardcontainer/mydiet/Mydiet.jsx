@@ -7,7 +7,7 @@ const Mydiet= React.createClass({
     render:function(){
         return(
            <div className="pure-g">
-             <Mydietview />
+            { <Mydietview />}
            </div>
             );
     }

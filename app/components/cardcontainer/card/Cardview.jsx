@@ -14,7 +14,9 @@ const Cardview = React.createClass({
                 <div className="card__action_share">
                     <img src="./assets/images/share.svg" />Share
                 </div>
-                <div className="card__action_add">+ Add to my diet </div>
+                <div className="card__action_add" onClick={this.props.handleClickCardfunc(this.props)}>
+                 + Add to my diet 
+                </div>
                 </div>
           </div>
          </div>
