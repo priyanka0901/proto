@@ -8,6 +8,7 @@
 .card{
     background-color: $card-bc;
     border:1px solid #e2e2e2;
+    text-align: center;
     width: 300px;
     padding: 10px;
     margin:40px auto;
@@ -37,8 +38,8 @@
     padding:4px 8px;
     border-radius: 2px;
     color:$button-text;
-    cursor: pointer;
     text-transform: capitalize;
+    cursor: pointer;
 }
 .card__action_share{
     img{

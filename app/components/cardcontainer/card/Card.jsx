@@ -17,7 +17,7 @@ const Card = React.createClass({
       {this.createCards(recipe)}
     </div>
         );
-    }
+    },
 });
 
 export default Card;

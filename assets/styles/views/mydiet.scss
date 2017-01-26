@@ -1,0 +1,63 @@
+/*-------diet-----------------*/
+
+
+/*--------dietcardview----------*/
+.dietcard{
+    width:400px;
+    padding: 15px;
+    border:1px solid #e2e2e2;
+}
+.dietcard__image{
+    background-image: url("../images/food.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 230px;
+}
+.dietcard__dishname{
+    font-size: 17px;
+    text-transform: capitalize;
+    padding:15px 0;
+    text-align: center;
+}
+.dietcard__nutrition{
+    ul{
+     padding-left: 20px;
+    li{
+    width: 130px;
+    margin-right: 40px;
+    display: inline-block;
+    line-height: 30px;
+    text-transform: capitalize;
+    color:#222;
+    }
+  }
+}
+.nutrition_values{
+    float: right;
+    color:$grey-font;
+}
+.dietcard__action{
+    padding:20px 10px 20px 15px;
+}
+.dietcard__action_share, .dietcard__action_remove{
+    display: inline-block;
+    margin:0 15px;
+    font-size: 14px;
+    border:1px solid #e2e2e2;
+    padding:4px 8px;
+    border-radius: 2px;
+    color:$button-text;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.dietcard__action_share{
+    img{
+        height: 12px;
+        width: 12px;
+        margin-right: 7px;
+    }
+}
+.dietcard__action_share:hover, .dietcard__action_remove:hover{
+    border: 1px solid #bbb;
+    color:$button-hover;
+}
