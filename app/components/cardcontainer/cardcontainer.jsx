@@ -4,15 +4,16 @@ import React from 'react';
 import Card from './card/Card.jsx';
 import Mydiet from './mydiet/Mydiet.jsx';
 
+var dietItem ={};
 const Cardcontainer = React.createClass({
     handleClickDiet:function(info){
-        var item = {
-         'id':info.id,
+          dietItem = {
+         'id':info.recipeId,
          'name':info.name,
          'image':info.image
-         };
-         console.log(item);
-    },
+        };
+        console.log(dietItem);
+},
     render:function(){
         return(
            <div>
@@ -26,7 +27,7 @@ const Dietcontainer = React.createClass({
     render:function(){
         return(
            <div>
-                <Mydiet />
+                <Mydiet dietItem={dietItem}/>
            </div>
          );
     }
