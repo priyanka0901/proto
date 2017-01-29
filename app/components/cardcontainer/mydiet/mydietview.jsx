@@ -7,14 +7,30 @@ const Mydietview =React.createClass({
         return(
          <div className="pure-u-lg-1-3 pure-u-md-1-2 pure-u-sm-1">
             <div className="dietcard">
-                <div className="dietcard__image" style={{backgroundImage:"url(" + this.props.image + ")"}}></div>
-                  <p className="dietcard__dishname">{this.props.name}</p>
+                <div className="dietcard__image" style={{backgroundImage:"url(" + this.props.data.image + ")"}}></div>
+                  <p className="dietcard__dishname">{this.props.data.name}</p>
                     <div className="dietcard__nutrition">
                       <ul>
-                      <li>calcium <span className="nutrition_values"> 48%</span></li>
-                      <li>calories <span className="nutrition_values">  35%</span></li>
-                      <li>protein <span className="nutrition_values"> 25%</span></li>
-                      <li>vitamin <span className="nutrition_values"> 32%</span></li>
+                      <li>calcium 
+                        <span className="nutrition_values"> 
+                         {this.props.data.calcium.percent}%
+                        </span>
+                      </li>
+                      <li>calories 
+                        <span className="nutrition_values">  
+                         {this.props.data.calories.percent}%
+                        </span>
+                      </li>
+                      <li>protein 
+                        <span className="nutrition_values"> 
+                          {this.props.data.protein.percent}%
+                        </span>
+                      </li>
+                      <li>vitamin
+                        <span className="nutrition_values"> 
+                        {this.props.data.vitamin.percent}%
+                        </span>
+                      </li>
                       </ul>
                     </div>
                   <div className="dietcard__action">
@@ -34,4 +50,3 @@ const Mydietview =React.createClass({
 
 export default Mydietview;
 
- <h2>calcium calories cholesterol protein vitamin Iron carbs fiber</h2>

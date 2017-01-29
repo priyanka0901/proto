@@ -5,13 +5,12 @@ import Mydietview from './mydietview.jsx';
 
 const Mydiet= React.createClass({
    createCard:function(data){
-    return <Mydietview name={data.name} image={data.image} recipeId={data.id} key={data.id} />;  
+    return <Mydietview data={data} key={data.id}/>;  
   },
   createCards:function(items){
     var cardBox = [];
     for (var item in items) {
         cardBox.push(this.createCard(items[item]));
-        console.log(items);
     };
     return cardBox;
   },
@@ -19,8 +18,8 @@ const Mydiet= React.createClass({
     render:function(){
         var dietItem = this.props.dietItem;
         return(
-           <div className="pure-g">
-             {this.createCard(dietItem)}
+           <div className="pure-g mydiet__container">
+             {this.createCards(dietItem)}
            </div>
         );
     }
