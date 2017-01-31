@@ -4,6 +4,7 @@ import React from 'react';
 
 const Mydietview =React.createClass({
     render:function(){
+        var shareme = 'http://www.facebook.com/sharer.php?u=priyanka0901.github.io&title=' + this.props.data.name + '&picture=' + this.props.data.image + '&description=hello';
         return(
          <div className="pure-u-lg-1-3 pure-u-md-1-2 pure-u-sm-1">
             <div className="dietcard">
@@ -35,9 +36,11 @@ const Mydietview =React.createClass({
                     </div>
                   <div className="dietcard__action">
                     <div className="dietcard__action_share">
+                      <a href={shareme} target="_blank">
                         <img src="./assets/images/share.svg" />share
+                      </a>
                     </div>
-                    <div className="dietcard__action_remove">- remove from my diet</div>
+                    <div className="dietcard__action_remove">- remove </div>
                  </div>
             </div>
          </div>      

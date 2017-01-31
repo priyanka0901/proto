@@ -5,6 +5,7 @@ import { render } from 'react-dom';
 import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router';
 import Navbar from './components/navbar/Navbar.jsx';
 import {Cardcontainer, Dietcontainer} from './components/cardcontainer/Cardcontainer.jsx';
+import {ShareButtons,ShareCounts,generateShareIcon} from 'react-share';
 
 const Layout = React.createClass({
     render: function() {
