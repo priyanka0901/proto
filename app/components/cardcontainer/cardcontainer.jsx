@@ -35,10 +35,17 @@ const Cardcontainer = React.createClass({
 });
 
 const Dietcontainer = React.createClass({
+    getInitialState:function(){
+        return dietItem
+    },
+    removeCard:function(recipeId){
+        delete dietItem[recipeId];
+        this.replaceState(dietItem);
+    },
     render:function(){
         return(
            <div>
-                <Mydiet dietItem={dietItem}/>
+                <Mydiet dietItem={dietItem} removeCard={this.removeCard}/>
            </div>
          );
     }

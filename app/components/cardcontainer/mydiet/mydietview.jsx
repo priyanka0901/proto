@@ -40,7 +40,7 @@ const Mydietview =React.createClass({
                         <img src="./assets/images/share.svg" />share
                       </a>
                     </div>
-                    <div className="dietcard__action_remove">- remove </div>
+                    <div className="dietcard__action_remove" onClick={this.props.removeCard(this.props.data.id)}>- remove </div>
                  </div>
             </div>
          </div>      
