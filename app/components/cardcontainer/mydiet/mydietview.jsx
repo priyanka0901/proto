@@ -12,9 +12,9 @@ const Mydietview =React.createClass({
                   <p className="dietcard__dishname">{this.props.data.name}</p>
                     <div className="dietcard__nutrition">
                       <ul>
-                      <li>calcium 
+                      <li>fat
                         <span className="nutrition_values"> 
-                         {this.props.data.calcium.percent}%
+                         {this.props.data.fat.percent}%
                         </span>
                       </li>
                       <li>calories 
@@ -27,9 +27,9 @@ const Mydietview =React.createClass({
                           {this.props.data.protein.percent}%
                         </span>
                       </li>
-                      <li>vitamin
+                      <li>carbs
                         <span className="nutrition_values"> 
-                        {this.props.data.vitamin.percent}%
+                        {this.props.data.carbs.percent}%
                         </span>
                       </li>
                       </ul>
