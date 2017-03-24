@@ -8,8 +8,8 @@ const Card = React.createClass({
     handleClickCard:function(info){
         var that = this.props.handleClickDiet;
         return function(){
-            that(info);
-        }
+            that(info); 
+        } 
     },
     createCard:function(data){
         return <Cardview name={data.name} image={data.image} key={data.recipe} recipeId={data.recipe} handleClickCardfunc={this.handleClickCard}/>;
